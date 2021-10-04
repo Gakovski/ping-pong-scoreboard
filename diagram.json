@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 63.27, "left": -158.26, "attrs": {} },
+    { "type": "wokwi-7segment", "id": "sevseg1", "top": -64.45, "left": 297.52, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r1", "top": -110.18, "left": 136.9, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r2", "top": -95.21, "left": 136.9, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r3", "top": -80.25, "left": 135.24, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r4", "top": -62.79, "left": 135.24, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r5", "top": -45.33, "left": 135.24, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r6", "top": -31.19, "left": 132.74, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r7", "top": -11.24, "left": 131.91, "attrs": {} },
+    { "type": "wokwi-7segment", "id": "sevseg2", "top": -63.61, "left": 350.54, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg3",
+      "top": -32.33,
+      "left": -313.95,
+      "attrs": { "digits": "4" }
+    }
+  ],
+  "connections": [
+    [ "sevseg1:A", "r1:2", "green", [ "v0" ] ],
+    [ "r1:1", "uno:12", "green", [ "v3", "h-104" ] ],
+    [ "sevseg1:B", "r2:2", "green", [ "v0" ] ],
+    [ "r2:1", "uno:11", "green", [ "v2", "h-133" ] ],
+    [ "sevseg1:C", "r3:2", "green", [ "v17", "h-55", "v-92" ] ],
+    [ "r3:1", "uno:10", "green", [ "v4", "h-135" ] ],
+    [ "sevseg1:D", "r4:2", "green", [ "v10", "h-50", "v-67" ] ],
+    [ "r4:1", "uno:9", "green", [ "v-1", "h-130" ] ],
+    [ "sevseg1:E", "r5:2", "green", [ "v1", "h-60", "v-42" ] ],
+    [ "r5:1", "uno:8", "green", [ "v1", "h-117" ] ],
+    [ "sevseg1:F", "r6:2", "green", [ "v-9", "h-24", "v57" ] ],
+    [ "r6:1", "uno:7", "green", [ "v2", "h-100" ] ],
+    [ "sevseg1:G", "r7:2", "green", [ "v55", "h-96" ] ],
+    [ "r7:1", "uno:6", "green", [ "v2", "h-92" ] ],
+    [ "sevseg1:COM.2", "uno:5V", "green", [ "h0", "v-49", "h-421", "v385", "h103" ] ]
+  ]
+}
